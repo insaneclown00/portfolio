@@ -1,10 +1,11 @@
-{% load static%}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    {% load static%}
     <meta charset="utf-8" />
-    <title>Lina - Creative vCard, Resume, CV</title>
+    <title>ShohebJ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -41,10 +42,10 @@
                                 <h3 class="ah-headline p-none m-none">
                                     <span class="font-weight-300">Hi There ! I'm</span>
                                     <span class="ah-words-wrapper">
-										<b class="is-visible">lina marzouki</b>
-										<b>a web designer</b>
-										<b>a photographer</b>
-										<b>a blogger</b>
+										<b class="is-visible">Shoheb Jahangir</b>
+                                        <b>a Django developer</b>
+                                        <b>a graphic designer</b>
+                                        <b>a data miner</b>
 									</span>
                                 </h3>
                             </div>
@@ -89,41 +90,39 @@
                         <div class="row">
 							<!-- Picture Starts -->
                             <div class="col s12 m5 l4 xl3 profile-picture">
-								<img src="images/photo-about.jpg" class="responsive-img my-picture" alt="My Photo">
+								<img src="{% static 'images/er.jpg' %}" class="responsive-img my-picture" alt="My Photo">
                             </div>
 							<!-- Picture Ends -->
                             <div class="col s12 m7 l8 xl9 personal-info">
                                 <h6 class="uppercase"><i class="fa fa-user"></i> Personal Informations</h6>
 								<div class="col m12 l7 xl7 p-none">
-									<p class="second-font">I'm a Freelance Web Designer & Developer based in Madrid, Spain.<br>
-									I have serious passion for UI effects, animations and creating intuitive, 
-									with over a decade of experience.
+									<p class="second-font">What I do: UX, Front-end, Web Scraping, Data Mining If you're looking for amazing web pages & knows his way around them I'm the guy you're looking for. As well as rounded user experience I ensure that system interfaces, designs, language are human-friendly, emotive & pleasing.
 									</p>
 								</div>
                                 <div class="col s12 m12 l6 p-none">
                                     <ul class="second-font list-1">
-                                        <li><span class="font-weight-600">First Name: </span>Lina</li>
-                                        <li><span class="font-weight-600">Last Name: </span>Marzouki</li>
-                                        <li><span class="font-weight-600">Date of birth: </span>21 june 1990 </li>
-                                        <li><span class="font-weight-600">Nationality: </span>Spanish</li>
+                                        <li><span class="font-weight-600">First Name: </span>Shoheb</li>
+                                        <li><span class="font-weight-600">Last Name: </span>Jahangir</li>
+                                        <li><span class="font-weight-600">Date of birth: </span>18 october 1990 </li>
+                                        <li><span class="font-weight-600">Nationality: </span>Bangladeshi</li>
 										<li><span class="font-weight-600">Freelance: </span>Available</li>
                                     </ul>
                                 </div>
                                 <div class="col s12 m12 l6 p-none">
                                     <ul class="second-font list-2">
-                                        <li><span class="font-weight-600">Phone: </span>+34 21 18 40 10</li>
-                                        <li><span class="font-weight-600">Address: </span>Madrid, Spain</li>
-                                        <li><span class="font-weight-600">Email: </span>you@yourwebsite.com</li>
-                                        <li><span class="font-weight-600">Spoken Langages: </span>French - German</li>
-										<li><span class="font-weight-600">Skype: </span>lina.marzouki</li>
+                                        <li><span class="font-weight-600">Phone: </span>+880 1521236125</li>
+                                        <li><span class="font-weight-600">Address: </span>Chittagong, Bangladesh</li>
+                                        <li><span class="font-weight-600">Email: </span>shohebj00@gmail.com</li>
+                                        <li><span class="font-weight-600">Spoken Langages: </span>Bangla - English</li>
+										<li><span class="font-weight-600">Skype: </span>shoheb033</li>
                                     </ul>
                                 </div>
-                                <a href="#" class="col s12 m12 l4 xl4 waves-effect waves-light btn font-weight-500">
+                                <a href="{% static 'shohebj.pdf' %}" class="col s12 m12 l4 xl4 waves-effect waves-light btn font-weight-500">
 									Download Resume <i class="fa fa-file-pdf-o"></i>
 								</a>
-								<a href="blog-dark.html" class="col s12 m12 l4 xl4 btn btn-blog font-weight-500">
+<!-- 								<a href="blog-dark.html" class="col s12 m12 l4 xl4 btn btn-blog font-weight-500">
 									My Blog <i class="fa fa-edit"></i>
-								</a>
+								</a> -->
                             </div>
                         </div>
 						<!-- Personal Informations Ends -->
@@ -134,11 +133,11 @@
                             <div class="valign-wrapper row">
 								<!-- Resume Menu Starts -->
                                 <div class="resume-list col l4">
-                                    <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
+<!--                                     <div class="resume-list-item is-active" data-index="0" id="resume-list-item-0">
                                         <div class="resume-list-item-inner">
                                             <h6 class="resume-list-item-title uppercase"><i class="fa fa-briefcase"></i> Experience</h6>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="resume-list-item" data-index="1" id="resume-list-item-1">
                                         <div class="resume-list-item-inner">
                                             <h6 class="resume-list-item-title uppercase"><i class="fa fa-graduation-cap"></i> Education</h6>
@@ -155,42 +154,6 @@
                                 <div class="col s12 m12 l8 resume-cards-container">
                                     <div class="resume-cards">
 										<!-- Experience Starts -->
-                                        <div class="resume-card resume-card-0" data-index="0">
-											<!-- Experience Header Title Starts -->
-                                            <div class="resume-card-header">
-                                                <div class="resume-card-name"><i class="fa fa-briefcase"></i> Experience</div>
-                                            </div>
-											<!-- Experience Header Title Ends -->
-											<!-- Experience Content Starts -->
-                                            <div class="resume-card-body experience">
-                                                <div class="resume-card-body-container second-font">
-													<!-- Single Experience Starts -->
-                                                    <div class="resume-content">
-														<h6 class="uppercase"><span>Web Designer - </span>Envato</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2018</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                                                    </div>
-													<!-- Single Experience Ends -->
-                                                    <span class="separator"></span>
-													<!-- Single Experience Starts -->
-                                                    <div class="resume-content">
-														<h6 class="uppercase"><span>Web Developer - </span>Google</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2011 - 2015</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                                                    </div>
-													<!-- Single Experience Ends -->
-                                                    <span class="separator"></span>
-													<!-- Single Experience Starts -->
-                                                    <div class="resume-content">
-														<h6 class="uppercase"><span>Community Manager - </span>Adobe</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2007 - 2011</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
-                                                    </div>
-													<!-- Single Experience Ends -->
-                                                </div>
-                                            </div>
-											<!-- Experience Content Starts -->
-                                        </div>
 										<!-- Experience Ends -->
 										<!-- Education Starts -->
                                         <div class="resume-card resume-card-1" data-index="1">
@@ -203,25 +166,28 @@
                                                 <div class="resume-card-body-container second-font">
 													<!-- Single Education Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Engineering Diploma - </span>Oxford University</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2015 - 2018</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>SSC - </span>BG High School</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2010</span>
+                                                        <p>Group: Science</p>
+														<p>Result: GPA 5.00 out of 5.00</p>
                                                     </div>
 													<!-- Single Education Ends -->
                                                     <span class="separator"></span>
 													<!-- Single Education Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Masters Degree - </span>Paris University</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2011 - 2015</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>HSC - </span>Govt. City College</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2012</span>
+                                                        <p>Group: Science</p>
+														<p>Result: GPA 5.00 out of 5.00</p>
                                                     </div>
 													<!-- Single Education Ends -->
                                                     <span class="separator"></span>
 													<!-- Single Education Starts -->
                                                     <div class="resume-content">
-														<h6 class="uppercase"><span>Bachelor Degree - </span>Berlin Higher Institute</h6>
-														<span class="date"><i class="fa fa-calendar-o"></i> 2007 - 2011</span>
-														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium orci sit amet mi ullamcorper</p>
+														<h6 class="uppercase"><span>Bachelor Degree - </span>Shahjalal University of Science and technology</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> 2013-2018</span>
+														<p>Major: Electrical & Electronic Enigineering</p>
+                                                        <p>Result: Embarassing</p>
                                                     </div>
 													<!-- Single Education Ends -->
                                                 </div>
@@ -260,13 +226,13 @@
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">php</h6>
+																<h6 class="uppercase">python</h6>
 																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
 															<!-- Single Skills Starts -->
                                                             <div class="resume-content">
-																<h6 class="uppercase">jquery</h6>
+																<h6 class="uppercase">c/c++</h6>
 																<p><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></p>
                                                             </div>
 															<!-- Single Skills Ends -->
@@ -337,7 +303,7 @@
                             <div class="col s12 m4 l4 center-align">
                                 <h3>
                                     <i class="fa fa-suitcase"></i>
-									<span class="font-weight-700">7+</span>
+									<span class="font-weight-700">4+</span>
                                 </h3>
                                 <h6 class="uppercase font-weight-500">Years Experience</h6>
                             </div>
@@ -346,7 +312,7 @@
                             <div class="col s12 m4 l4 center-align">
                                 <h3>
                                     <i class="fa fa-check-square"></i>
-									<span class="font-weight-700">89+</span>
+									<span class="font-weight-700">40+</span>
                                 </h3>
                                 <h6 class="uppercase font-weight-500">Done Projects</h6>
                             </div>
@@ -355,7 +321,7 @@
                             <div class="col s12 m4 l4 center-align">
                                  <h3>
                                     <i class="fa fa-heart"></i>
-									<span class="font-weight-700">77+</span>
+									<span class="font-weight-700">50+</span>
                                 </h3>
                                 <h6 class="uppercase font-weight-500">Happy customers</h6>
                             </div>
@@ -365,7 +331,7 @@
 					<!-- Fun Facts Ends -->
                 </div>
                 <!-- End Expanded About -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+                <img alt="close" src="{% static 'images/close-button.png' %}" class="bl-icon-close" />
             </section>
             <!-- About Ends -->
             <!-- Portfolio Starts -->
@@ -415,7 +381,7 @@
                     </div>
                 </div>
                 <!-- Portfolio Expanded Ends -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+                <img alt="close" src="{% static 'images/close-button.png' %}" class="bl-icon-close" />
             </section>
             <!-- Portfolio Section Ends -->
             <!-- Contact Section Starts -->
@@ -455,21 +421,21 @@
                             <div class="col s12 m5 l3 xl3 leftside">
 								<!-- Contacts Starts -->
                                 <h6 class="font-weight-500 uppercase">Phone</h6>
-                                <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +34 62 11 84 01</span>
+                                <span class="font-weight-400 second-font"><i class="fa fa-phone"></i> +880 1521236125</span>
 								<h6 class="font-weight-500 uppercase">Email</h6>
-								<span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> you@youwebsite.com</span>
+								<span class="font-weight-400 second-font"><i class="fa fa-envelope"></i> shohebj00@gmail.com</span>
 								<h6 class="font-weight-500 uppercase">Address</h6>
-								<span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Madrid, Spain</span><br>
-								<span class="font-weight-400 second-font">123 Disney Street, Madrid</span>
+								<span class="font-weight-400 second-font"><i class="fa fa-home"></i>  Chittagong, Bangladesh</span><br>
+								<span class="font-weight-400 second-font">Chawkbazar, Chittagong</span>
 								<!-- Contacts Ends -->
 								<!-- Social Media Profiles Starts -->
                                 <h6 class="font-weight-500 uppercase">Social Profiles</h6>
                                 <div class="social">
                                     <ul class="list-inline social social-intro center-align p-none">
-                                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="facebook"><a href="https://www.facebook.com/shohebj/"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="twitter"><a href="https://twitter.com/shohebj00"><i class="fa fa-twitter"></i></a></li>
                                         <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li class="linkedin"><a href="https://www.linkedin.com/in/shohebj/"><i class="fa fa-linkedin"></i></a></li>
                                     </ul>
                                 </div>
 								<!-- Social Media Profiles Ends -->
@@ -483,11 +449,12 @@
 										If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.
 									</p>
 								</div>
-                                <form class="contactform" method="post" action="php/process-form.php">
+                                <form class="contactform" method="POST" action="{% url 'contact' %}">
+                                    {% csrf_token %}
                                     <!-- Name Field Starts -->
                                     <div class="input-field second-font">
                                         <i class="fa fa-user prefix"></i>
-                                        <input id="name" name="name" type="text" class="validate" required>
+                                        <input id="name" name="name" type="text" value="name">
                                         <label class="font-weight-400" for="name">Your Name</label>
                                     </div>
                                     <!-- Name Field Ends -->
@@ -507,14 +474,11 @@
                                     <!-- Message Textarea Ends -->
 									<!-- Submit Form Button Starts -->
                                     <div class="col s12 m12 l4 xl4 submit-form">
-                                        <button class="btn font-weight-500" type="submit" name="send">
+                                        <button class="btn font-weight-500" type="submit" name="send" value="Submit">
 											Send Message <i class="fa fa-send"></i>
 										</button>
                                     </div>
                                     <!-- Submit Form Button Ends -->
-                                    <div class="col s12 m12 l8 xl8 form-message">
-                                        <span class="output_message center-align font-weight-500 uppercase"></span>
-                                    </div>
                                 </form>
                             </div>
                             <!-- Contact Form Ends -->
@@ -522,7 +486,7 @@
                     </div>
                 </div>
                 <!-- Expanded Contact Ends -->
-                <img alt="close" src="images/close-button.png" class="bl-icon-close" />
+                <img alt="close" src="{% static 'images/close-button.png' %}" class="bl-icon-close" />
             </section>
             <!-- Contact Section Ends -->
             <!-- Portfolio Panel Items Starts -->
@@ -545,7 +509,7 @@
                             </ul>
                             <hr>
                             <p class="white-text second-font">{{ job.summary }}</p>
-                            <a href="#" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
+                            <a href="{{ job.link }}" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
                         </div>
                         <!-- Project Details Ends -->
                     </div>
