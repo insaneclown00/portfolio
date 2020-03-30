@@ -18,5 +18,4 @@ def contact(request):
 		contact = Contact(name=name, email=email, message=message)
 		contact.save()
 		
-
-	return render(request, 'jobs/index-dark.html')
+		return render(request, 'jobs/index-dark.html',{'contact':contact})

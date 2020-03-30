@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    {% load static%}
+    {% load static from staticfiles %}
     <meta charset="utf-8" />
     <title>ShohebJ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/skins/yellow.css' %}" />
 
     <!-- Template JS Files -->
-    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/modernizr.custom.js' %}"></script>
 
 </head>
 
@@ -103,7 +103,7 @@
                                     <ul class="second-font list-1">
                                         <li><span class="font-weight-600">First Name: </span>Shoheb</li>
                                         <li><span class="font-weight-600">Last Name: </span>Jahangir</li>
-                                        <li><span class="font-weight-600">Date of birth: </span>18 october 1990 </li>
+                                        <li><span class="font-weight-600">Date of birth: </span>18 october 1994 </li>
                                         <li><span class="font-weight-600">Nationality: </span>Bangladeshi</li>
 										<li><span class="font-weight-600">Freelance: </span>Available</li>
                                     </ul>
@@ -449,7 +449,7 @@
 										If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.
 									</p>
 								</div>
-                                <form class="contactform" method="POST" action="{% url 'contact' %}">
+                                <form class="contactform" method="POST" action="">
                                     {% csrf_token %}
                                     <!-- Name Field Starts -->
                                     <div class="input-field second-font">
@@ -509,7 +509,7 @@
                             </ul>
                             <hr>
                             <p class="white-text second-font">{{ job.summary }}</p>
-                            <a href="{{ job.link }}" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
+                            <a href="{{ job.link }}" target="_blank" class="waves-effect waves-light btn font-weight-500">Preview <i class="fa fa-external-link"></i></a>
                         </div>
                         <!-- Project Details Ends -->
                     </div>
@@ -536,12 +536,12 @@
     <!-- Wrapper Ends -->
 
     <!-- Template JS Files -->
-    <script src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
-    <script src="{% static 'js/jquery.animatedheadline.js' %}"></script>
-    <script src="{% static 'js/boxlayout.js' %}"></script>
-    <script src="{% static 'js/materialize.min.js' %}"></script>
-    <script src="{% static 'js/jquery.hoverdir.js' %}"></script>
-    <script src="{% static 'js/custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-2.2.4.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.animatedheadline.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/boxlayout.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.hoverdir.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
 </body>
 
 </html>
